@@ -3,7 +3,7 @@ Projekt studencki realizujacy encyklopedie muzyczna dedykowana tworczosci Kanye 
 Wymagania systemowe
 
 Do poprawnego uruchomienia projektu wymagane jest srodowisko kontenerowe. Obslugiwane konfiguracje:
-Windows: Docker Desktop z aktywnym WSL2; Linux: Docker Engine oraz Docker Compose; maszyny wirtualne z zainstalowanym silnikiem Docker.
+Windows: Docker Desktop z aktywnym WSL2; Linux: silnik Docker oraz Docker Compose; maszyny wirtualne z zainstalowanym silnikiem Docker.
 
 
 Instrukcja uruchomienia
