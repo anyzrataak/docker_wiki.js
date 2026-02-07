@@ -1,0 +1,46 @@
+services:
+  proxy:
+    build: ./nginx
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - MY_IP=172.17.0.0/12
+    ports:
+      - "8080:80"
+      - "2222:22"
+    networks:
+      - so_net
+
+  appwiki:
+    build: ./app
+    environment:
+      - DB_TYPE=postgres
+      - DB_HOST=bazadanych
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASS=haslo123
+      - DB_NAME=postgres
+    volumes:
+      - ./moje_dane:/wiki/backups
+    networks:
+      - so_net
+    depends_on:
+      - bazadanych
+
+  bazadanych:
+    build: ./db
+    environment:
+      - POSTGRES_PASSWORD=haslo123
+    volumes:
+      - sql_bazadanych:/var/lib/postgresql/data
+      - ./danezwiki.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - so_net
+
+networks:
+  so_net:
+    driver: bridge
+
+volumes:
+  sql_bazadanych:
