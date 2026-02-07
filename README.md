@@ -13,10 +13,15 @@ Uruchomienie srodowiska:
 docker-compose up -d
 Dostep do aplikacji: Po uruchomieniu kontenerow aplikacja jest dostepna w przegladarce pod adresem: http://localhost:3000
 
+
 Zarzadzanie kontenerami
 
 Zatrzymanie aplikacji: docker-compose down
+
 Restart wszystkich uslug: docker-compose restart
+
 Podglad logow systemowych: docker-compose logs -f
+
 Sprawdzenie statusu kontenerow: docker ps
+
 Usuniecie kontenerow wraz z wolumenami danych: docker-compose down -v
