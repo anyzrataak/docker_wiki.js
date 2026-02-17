@@ -1,4 +1,4 @@
-Projekt studencki realizujacy encyklopedie muzyczna dedykowana tworczosci Kanye Westa. Portal koncentruje sie na analizie ewolucji stylu muzycznego artysty, ze szczegolnym uwzglednieniem technik samplingu oraz relacji miedzy oryginalnymi utworami a ich wykorzystaniem w produkcji muzycznej Westa.
+Projekt studencki realizujacy encyklopedie muzyczna dedykowana tworczosci Kanyego Westa. Portal koncentruje sie na analizie ewolucji stylu muzycznego artysty, ze szczegolnym uwzglednieniem technik samplingu oraz relacji miedzy oryginalnymi utworami a ich wykorzystaniem w produkcji muzycznej Westa.
 
 Wymagania systemowe
 
